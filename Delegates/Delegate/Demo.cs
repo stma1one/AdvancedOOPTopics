@@ -19,6 +19,8 @@ namespace Delegates.Delegate
     {
         public Action<string> Print;
         public Func<int[], int, bool> DlgFun;
+        public Predicate<int[]> Predicate;
+
         public static bool IsExists<T>(T[] arr, T val)
         {
             foreach (T x in arr)

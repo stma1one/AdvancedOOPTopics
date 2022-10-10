@@ -25,7 +25,7 @@ namespace Delegates.Anonymous
         #region Using Lambda makes it more Readble...
         public static void LambdaDemo(int[] arr, int x)
         {
-            Console.WriteLine(Check(arr, x, (int[] a, int b) => { return a[0] == b; }));
+            Console.WriteLine(Check(arr, x, (int[] a, int b) => { return  a[0] == b; }));
         }
         
         #endregion

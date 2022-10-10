@@ -9,6 +9,9 @@ namespace Delegates
             //return dlg.Invoke(arr,x);
             return dlg(arr, x);
         }
+
+       
+        
         static void Main(string[] args)
         {
             DelegateMath Do;
@@ -33,6 +36,8 @@ namespace Delegates
 #region What if we could pass method as a Parameter?
             Console.WriteLine(Check(arr, 9, Demo.IsAllBigger));
             Console.WriteLine(Check(arr, 9, Demo.IsExists));
+
+
             #endregion
 
            
