@@ -20,6 +20,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{21B67534-AA56-4D01-A302-659177E01920}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Part5", "Part5", "{20896002-3F58-4426-89EC-5D903F64BA59}"
+	ProjectSection(SolutionItems) = preProject
+		Generics\Generics\Exercise\Monkey.cs = Generics\Generics\Exercise\Monkey.cs
+		Generics\Generics\Exercise\MonkeysExcersize.cs = Generics\Generics\Exercise\MonkeysExcersize.cs
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{605B5ABD-BB3F-4305-BF82-043054794B49}"
 EndProject
