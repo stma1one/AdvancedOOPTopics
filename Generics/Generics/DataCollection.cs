@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Generics
+namespace Generics.Generics
 {
     class DataCollection<T>
     {
@@ -13,15 +13,15 @@ namespace Generics
         const int MAX = 1000;
         public DataCollection()
         {
-            this.arrData = new T[MAX];
-            this.numData = 0;
+            arrData = new T[MAX];
+            numData = 0;
         }
 
         public void Add(T p)
         {
-            if (this.numData < MAX)
+            if (numData < MAX)
             {
-                this.arrData[numData++] = p;
+                arrData[numData++] = p;
             }
         }
     }

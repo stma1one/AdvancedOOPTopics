@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Generics
+namespace Generics.Generics
 {
     public static class GenericsDemo
     {
         #region As We Know it
-        public static bool Search(double[] arr, double val)
+        public static bool Exists(int[] arr, int val)
         {
             for (int i = 0; i < arr.Length; i++)
             {
@@ -27,7 +27,7 @@ namespace Generics
                 if (arr[i].Equals(val))
                     return arr[i];
             }
-            return default(T);
+            return default;
         }
         #endregion
     }

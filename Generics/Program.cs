@@ -1,4 +1,5 @@
-﻿using Reflection;
+﻿using Generics.Generics;
+using Reflection;
 namespace Generics
 {
     internal class Program
@@ -6,9 +7,15 @@ namespace Generics
         static void Main(string[] args)
         {
             int[] arr = {4,6,8,10};
-           int number= GenericsDemo.Search<int>(arr, 8);
-            string[] arr2 = { "4", "kuku", "kaka", "shishlik" };
-            string result=GenericsDemo.Search<string>(arr2, "kaka");
+            bool isExists = GenericsDemo.Exists(arr, 8);
+            double[] arr2 = { 4, 6, 8, 10 };
+            // bool isExists = GenericsDemo.Exists(arr2, 8);
+
+            #region Generic Methods
+            int number = GenericsDemo.Search<int>(arr, 8);
+            string[] arr3 = { "4", "kuku", "kaka", "shishlik" };
+            string result=GenericsDemo.Search<string>(arr3, "kaka");
+            #endregion
 
             #region Generic Class Usage
             DataCollection<int> dt=new DataCollection<int>();

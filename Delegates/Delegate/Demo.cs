@@ -6,21 +6,32 @@ using System.Threading.Tasks;
 
 namespace Delegates.Delegate
 {
-
-    public delegate int DelegateMath(int x, int y);
-
-    public delegate bool DlgBool<T>(T[] arr, T x);
-
-    public delegate void  DlgPrint(string text);
-
+   
     
-    
+
+
+
     public class Demo
     {
-        public Action<string> Print;
-        public Func<int[], int, bool> DlgFun;
-        public Predicate<int[]> Predicate;
+       
+       
+        public static void WriteMessage(object o)
+        {
+            Console.WriteLine($"result:{o.ToString()}");
+        }
+          public static int Add(int x, int y)
+        {
+           
+            return x + y;
+        }
 
+        public static int Mul(int x, int y)
+        {
+            return x * y;
+        }
+
+       
+        
         public static bool IsExists<T>(T[] arr, T val)
         {
             foreach (T x in arr)
@@ -39,14 +50,14 @@ namespace Delegates.Delegate
             }
             return true;
         }
-        public static int Add(int x, int y)
-        {
-            return x + y;
-        }
 
-        public static int Mul(int x, int y)
+        #region Using Delegate as Parameter
+        public static bool Check(int[] arr, int x, Func<int[], int, bool> dlg)
         {
-            return x * y;
+            //return dlg.Invoke(arr,x);
+            return dlg(arr, x);
         }
+        #endregion
+
     }
 }
