@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Collections\Exercise\" />
     <Folder Include="Generics\Exercise\" />
   </ItemGroup>
 

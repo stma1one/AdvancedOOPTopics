@@ -1,4 +1,5 @@
-﻿using Generics.Generics;
+﻿using Generics.Collections.Exercise;
+using Generics.Generics;
 using Reflection;
 namespace Generics
 {
@@ -26,6 +27,13 @@ namespace Generics
             { BirthYear=2000,
              Name="Messi"});
             #endregion
+
+
+            #region Test your Exercise here....
+            
+
+            #endregion
+
         }
     }
 }

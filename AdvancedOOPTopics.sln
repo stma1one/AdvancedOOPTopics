@@ -9,17 +9,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "Reflection\Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{8D9DC7D0-4A46-4CC8-85AD-2DA628E56516}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Part1", "Part1", "{F9ABB753-90D4-4ED1-B600-9C922D160EAF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Part1- Properties", "Part1- Properties", "{F9ABB753-90D4-4ED1-B600-9C922D160EAF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Part2", "Part2", "{43D38B0F-865E-4964-BB17-D8C58122DAC9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Part2- Reflection", "Part2- Reflection", "{43D38B0F-865E-4964-BB17-D8C58122DAC9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Part3", "Part3", "{0EFB9EBC-39E6-4CA5-9C17-E78D445FE48A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Part3- Generics And Collections", "Part3- Generics And Collections", "{0EFB9EBC-39E6-4CA5-9C17-E78D445FE48A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Part4", "Part4", "{F9CA4FCE-CAF9-4080-9DAF-4BF604FBF2FE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Part4 - Delegates", "Part4 - Delegates", "{F9CA4FCE-CAF9-4080-9DAF-4BF604FBF2FE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{21B67534-AA56-4D01-A302-659177E01920}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Part5", "Part5", "{20896002-3F58-4426-89EC-5D903F64BA59}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Part5 - LINQ", "Part5 - LINQ", "{20896002-3F58-4426-89EC-5D903F64BA59}"
 	ProjectSection(SolutionItems) = preProject
 		Generics\Generics\Exercise\Monkey.cs = Generics\Generics\Exercise\Monkey.cs
 		Generics\Generics\Exercise\MonkeysExcersize.cs = Generics\Generics\Exercise\MonkeysExcersize.cs

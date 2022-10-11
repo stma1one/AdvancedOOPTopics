@@ -15,6 +15,16 @@ namespace LINQ
             #region Extensions Methods
             i.About();
             #endregion
+
+
+            #region LINQ
+
+            int[] arr = { 4, 7, 8, -24, -5 };
+            int[] arr2= arr.Where(x => x > 0).ToArray();
+            int sum = arr.Sum(x=>x*x);
+            int[] arr3=arr.OrderBy(x=>x).Where(x=>x < 0).ToArray();
+            
+            #endregion
         }
     }
 }
