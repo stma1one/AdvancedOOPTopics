@@ -66,18 +66,25 @@ namespace Delegates
             #endregion
 
             #region But Do we really need to write all these methods for just specific case? -Anonymous methods
+            Func<int, bool> bigger = delegate (int val) { return val > 0; };
+            PrintAnswer(bigger(4));
+            PrintAnswer(bigger(-5));
             PrintAnswer(Demo.Check(arr, 4, delegate (int[] a, int b) { return a[0] == b; }));
             PrintAnswer(Demo.Check(arr, 12, delegate (int[] a, int val) { foreach (int v in a) { if (v == val) return true; }  return false; }));
             #endregion
 
             #region Writing anonymous delegates...too much typing=>using lambda!
             //=>stands for delegate
+
+            Func<int, bool> positive = (int x) => { return x > 0; };
             PrintAnswer(Demo.Check(arr, 4, (int[] a, int b) => { return a[0] == b; }));
             PrintAnswer(Demo.Check(arr, 12, (int[] a, int val) => { foreach (int v in a) { if (v == val) return true; } return false; }));
             #endregion
 
             #region Predicate is a Special form of FUNC it has only one paramter and return a bool
             //so basically Predicate is a Func<T,bool>
+            Predicate<int> p1 = Demo.IsPositive;
+            PrintAnswer(p1(8));
             Predicate<int> p = (x) => x>8;
             #region other ways of writing it
             //Func<int,bool> p= delegate(int x) { return x>8} OR Func<int,bool> p=(x)=>x>8

@@ -51,6 +51,11 @@ namespace Delegates.Delegate
             return true;
         }
 
+        public static bool IsPositive(int val)
+        {
+            return val > 0;
+        }
+
         #region Using Delegate as Parameter
         public static bool Check(int[] arr, int x, Func<int[], int, bool> dlg)
         {
